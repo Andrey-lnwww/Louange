@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240524142202">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240524183641">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item menu__item-sub"><a href="#" class="menu__link">Услуги</a>
+								<li class="menu__item menu__item-sub"><a href="#" class="menu__link link">Услуги</a>
 									<ul class="menu-sub">
 										<li class="menu-sub__item"><a class="menu-sub__link link" href="#">Текстильное декорирование окон</a>
 										</li>
@@ -31,10 +31,10 @@
 										</li>
 									</ul>
 								</li>
-								<li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">О студии</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="#" class="menu__link link">Каталог</a></li>
+								<li class="menu__item"><a href="#" class="menu__link link">Проекты</a></li>
+								<li class="menu__item"><a href="#" class="menu__link link">О студии</a></li>
+								<li class="menu__item"><a href="#" class="menu__link link">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -52,7 +52,8 @@
 						</div>
 						<button class="main-slider__btn btn btn--grey" type="button">Оставить заявку</button>
 					</div>
-					<div class="main-slider__pagination swiper-pagination"></div>
+					<div class="main-slider__pagination swiper-pagination">
+					</div>
 				</div>
 				<div class="main-slider__slider swiper">
 					<div class="main-slider__wrapper swiper-wrapper">
@@ -60,7 +61,7 @@
 						</div>
 						<div style="background-image: url('img/services/services1.png');" class="main-slider__slide swiper-slide">
 						</div>
-						<div style="background-image: url('img/services/services1.png');" class="main-slider__slide swiper-slide">
+						<div style="background-image: url('img/main-slider1.png');" class="main-slider__slide swiper-slide">
 						</div>
 						<div style="background-image: url('img/services/services1.png');" class="main-slider__slide swiper-slide">
 						</div>
@@ -75,13 +76,6 @@
 					<ul class="services__list cards cards-3">
 						<li class="services__item cards__item">
 							<article class="card">
-								<a style="background-image: url('img/services/services1.png');" class="services__item-link shadow shadow--small card__link" href="##">
-									<h3 class="card__title card__title">Постельное белье</h3>
-								</a>
-							</article>
-						</li>
-						<li class="services__item cards__item">
-							<article class="card">
 								<a style="background-image: url('img/services/services2.png');" class="services__item-link shadow shadow--small card__link" href="##">
 									<h3 class="card__title card__title">Пошив штор</h3>
 								</a>
@@ -91,6 +85,13 @@
 							<article class="card">
 								<a style="background-image: url('img/services/services3.png');" class="services__item-link shadow shadow--small card__link" href="##">
 									<h3 class="card__title card__title">Обивка мебели</h3>
+								</a>
+							</article>
+						</li>
+						<li class="services__item cards__item">
+							<article class="card">
+								<a style="background-image: url('img/services/services1.png');" class="services__item-link shadow shadow--small card__link" href="##">
+									<h3 class="card__title card__title">Постельное белье</h3>
 								</a>
 							</article>
 						</li>
@@ -134,13 +135,15 @@
 			</section>
 			<section class="section-offset projects section">
 				<div class="projects__container">
-					<div class="section__header section__header-offset">
+					<div class="section__header section__header-offset projects__header">
 						<h2 class="section__title section__line-decor">Проекты</h2>
 						<p class="section__subtitle">Наши проекты — это истории о преображении обычных пространств в уникальные
 							выражения
 							стиля и комфорта. Мы работаем с самыми разными стилями и предпочтениями, чтобы воплотить ваши мечты в
 							реальность</p>
 					</div>
+				</div>
+				<div class="projects__container container-wide">
 					<h3 class="projects__title">Кремль</h3>
 					<div class="projects-slider">
 						<div class="swiper">
@@ -205,6 +208,8 @@
 							</button>
 						</div>
 					</div>
+				</div>
+				<div class="projects__container">
 					<div class="other-projects projects__other-projects">
 						<div class="section__header other-projects__header section__header-flex">
 							<h3 class="section__header-title">Другие проекты Louange</h3>
@@ -239,7 +244,6 @@
 									<a class="project-card__link btn" href="#">Подробнее</a>
 								</article>
 							</li>
-
 						</ul>
 					</div>
 				</div>
@@ -405,13 +409,13 @@
 									<a class="footer-menu__item-link" href="##">Услуги</a>
 									<ul class="footer-menu-list">
 										<li class="footer-menu-list__item">
-											<a class="footer-menu-list__link" href="##">Постельное белье</a>
-										</li>
-										<li class="footer-menu-list__item">
 											<a class="footer-menu-list__link" href="##">Пошив штор, покрывал, подушек</a>
 										</li>
 										<li class="footer-menu-list__item">
 											<a class="footer-menu-list__link" href="##">Обивка мебели</a>
+										</li>
+										<li class="footer-menu-list__item">
+											<a class="footer-menu-list__link" href="##">Постельное белье</a>
 										</li>
 									</ul>
 								</li>
@@ -471,7 +475,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240524142202"></script>
+	<script src="js/app.min.js?_v=20240524183641"></script>
 </body>
 
 </html>

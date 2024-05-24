@@ -4092,6 +4092,7 @@
             nested: true,
             effect: "fade",
             autoplay: {
+                delay: 3e3,
                 disableOnInteraction: false
             },
             pagination: {
@@ -4104,30 +4105,36 @@
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 2.31,
+            slidesPerView: "auto",
             spaceBetween: 96,
             autoHeight: true,
             speed: 800,
-            grabCursor: true,
             observeSlideChildren: true,
             slideToClickedSlide: true,
             loop: true,
             watchOverflow: true,
             centeredSlides: true,
+            allowTouchMove: false,
+            onlyExternal: true,
+            noSwiping: true,
             navigation: {
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
             },
             breakpoints: {
-                320: {},
-                768: {},
-                992: {
-                    spaceBetween: 80,
-                    slidesPerView: 2.1
+                320: {
+                    spaceBetween: 8
                 },
+                361: {
+                    spaceBetween: 24
+                },
+                671: {
+                    spaceBetween: 80
+                },
+                769: {},
+                993: {},
                 1268: {
-                    spaceBetween: 96,
-                    slidesPerView: 2.31
+                    spaceBetween: 96
                 }
             },
             on: {}
